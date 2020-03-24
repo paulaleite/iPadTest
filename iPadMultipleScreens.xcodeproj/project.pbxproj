@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1E518059242A90920064506F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E518058242A90920064506F /* AppDelegate.swift */; };
 		1E51805B242A90920064506F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51805A242A90920064506F /* SceneDelegate.swift */; };
-		1E51805D242A90920064506F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51805C242A90920064506F /* ListViewController.swift */; };
 		1E518060242A90920064506F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E51805E242A90920064506F /* Main.storyboard */; };
 		1E518062242A90960064506F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E518061242A90960064506F /* Assets.xcassets */; };
 		1E518065242A90960064506F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E518063242A90960064506F /* LaunchScreen.storyboard */; };
+		1E51806D242A995C0064506F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51806C242A995C0064506F /* ListViewController.swift */; };
+		1E51806F242A9C150064506F /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51806E242A9C150064506F /* ListTableViewCell.swift */; };
+		1E518071242A9DA30064506F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E518070242A9DA30064506F /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E518055242A90920064506F /* iPadMultipleScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadMultipleScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E518058242A90920064506F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E51805A242A90920064506F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E51805C242A90920064506F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1E51805F242A90920064506F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E518061242A90960064506F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E518064242A90960064506F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E518066242A90960064506F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E51806C242A995C0064506F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1E51806E242A9C150064506F /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		1E518070242A9DA30064506F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		1E518057242A90920064506F /* iPadMultipleScreens */ = {
 			isa = PBXGroup;
 			children = (
+				1E518072242A9E6C0064506F /* Model */,
+				1E518073242A9E750064506F /* View */,
+				1E518074242A9E7D0064506F /* Controller */,
 				1E518058242A90920064506F /* AppDelegate.swift */,
-				1E51805A242A90920064506F /* SceneDelegate.swift */,
-				1E51805C242A90920064506F /* ListViewController.swift */,
-				1E51805E242A90920064506F /* Main.storyboard */,
 				1E518061242A90960064506F /* Assets.xcassets */,
-				1E518063242A90960064506F /* LaunchScreen.storyboard */,
 				1E518066242A90960064506F /* Info.plist */,
 			);
 			path = iPadMultipleScreens;
+			sourceTree = "<group>";
+		};
+		1E518072242A9E6C0064506F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E51805A242A90920064506F /* SceneDelegate.swift */,
+				1E518070242A9DA30064506F /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E518073242A9E750064506F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E51805E242A90920064506F /* Main.storyboard */,
+				1E518063242A90960064506F /* LaunchScreen.storyboard */,
+				1E51806E242A9C150064506F /* ListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E518074242A9E7D0064506F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E51806C242A995C0064506F /* ListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E51805D242A90920064506F /* ListViewController.swift in Sources */,
 				1E518059242A90920064506F /* AppDelegate.swift in Sources */,
+				1E51806F242A9C150064506F /* ListTableViewCell.swift in Sources */,
 				1E51805B242A90920064506F /* SceneDelegate.swift in Sources */,
+				1E518071242A9DA30064506F /* Note.swift in Sources */,
+				1E51806D242A995C0064506F /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
